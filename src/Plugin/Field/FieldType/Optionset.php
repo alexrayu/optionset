@@ -86,9 +86,22 @@ class Optionset extends FieldItemBase {
    */
   public function getValue() {
     if (empty($this->value) && !empty($this->values)) {
-      return $this->values;
+      $value = implode('|', $this->values);
     }
-    return explode('|', $this->value);
+    else {
+      $value = $this->value;
+    }
+    return $value;
+  }
+
+  /**
+   * Returns the value by keys array.
+   *
+   * @retrun array
+   *   Value options keys.
+   */
+  public function getOptions() {
+    return explode('|', $this->getValue());
   }
 
   /**

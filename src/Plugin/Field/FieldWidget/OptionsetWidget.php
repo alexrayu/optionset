@@ -27,7 +27,7 @@ class OptionsetWidget extends WidgetBase implements ContainerFactoryPluginInterf
     $field_settings = $this->getFieldSettings();
     $options = $this->extractAllowedValues($field_settings['allowed_values']);
     $item =& $items[$delta];
-    $value = $item->getValue();
+    $value = $item->getOptions();
     $element['value'] = [
       '#type' => 'checkboxes',
       '#title' => $this->fieldDefinition->getLabel(),
