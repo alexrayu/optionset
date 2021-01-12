@@ -1,0 +1,14 @@
+{
+  "name": "drupal/optionset",
+  "type": "drupal-module",
+  "description": "An options field with flat storage backend.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/optionset",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/optionset",
+    "source": "http://cgit.drupalcode.org/optionset"
+  },
+  "require": { }
+}
