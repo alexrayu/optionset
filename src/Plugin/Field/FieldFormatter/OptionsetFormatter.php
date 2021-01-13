@@ -27,7 +27,7 @@ class OptionsetFormatter extends FormatterBase implements ContainerFactoryPlugin
     $field_settings = $this->getFieldSettings();
     $options = $this->extractAllowedValues($field_settings['allowed_values']);
     foreach ($items as $delta => $item) {
-      $value = $item->getValue();
+      $value = explode('|', $item->getValue());
       $results = [];
       foreach ($options as $option => $title) {
         $res = in_array($option, $value) ? '☑' : '☐';
