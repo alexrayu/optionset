@@ -33,6 +33,7 @@ class OptionsetWidget extends WidgetBase implements ContainerFactoryPluginInterf
       '#title' => $this->fieldDefinition->getLabel(),
       '#options' => $options,
       '#default_value' => $value,
+      '#description' => $this->fieldDefinition->getDescription(),
     ];
 
     return $element;
